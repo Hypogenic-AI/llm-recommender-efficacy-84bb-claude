@@ -1,0 +1,4 @@
+method,mean_latency_s,median_latency_s,mean_tokens_in,mean_tokens_out
+claude_no_history,2.41,2.32,391.92,43.0
+claude_with_history,2.54,2.46,982.92,43.0
+gpt41_with_history,0.78,0.7,830.62,39.22

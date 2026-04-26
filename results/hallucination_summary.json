@@ -1,0 +1,14 @@
+{
+  "anthropic/claude-sonnet-4.5": {
+    "n_recs": 240,
+    "n_resolved": 120,
+    "entities_resolved_share": 0.5,
+    "mean_popularity_resolved": 48.99166666666667
+  },
+  "gpt-4.1": {
+    "n_recs": 240,
+    "n_resolved": 92,
+    "entities_resolved_share": 0.38333333333333336,
+    "mean_popularity_resolved": 43.51086956521739
+  }
+}

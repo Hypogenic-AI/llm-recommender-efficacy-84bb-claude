@@ -1,0 +1,64 @@
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Problem Setup}
+
+For each user $u$ we observe a time-stamped listening history $\gH_u = \{(t_i, a_i, s_i)\}_{i=1}^{n_u}$ where $a_i$ is artist and $s_i$ is track. Let $T_u$ denote the latest timestamp in $\gH_u$. We split each user's history at $T_u - 30$ days: listens before this cut form the train window, listens after form the test window. The set of held-out positives $\gP_u$ for user $u$ is the set of unique catalog-resolved tracks listened to in the test window that the user did not listen to in the train window. A method's task is to rank a fixed candidate pool $\gC_u$ (defined below) such that $\gP_u \cap \gC_u$ is concentrated near the top.
+
+\subsection{Datasets}
+\label{sec:datasets}
+
+\para{Listening histories.} We use the publicly available $50$-user sample of \lastfm \citep{schedl2017lfm1b}, comprising $776$K time-stamped listens from $2005$--$2009$. After requiring $\ge 50$ train listens and $\ge 2$ catalog-resolved positives per user, $N{=}24$ users are eligible.
+
+\para{Item catalog.} Candidates are drawn from the HuggingFace \texttt{maharshipandya/spotify-tracks-dataset} (\spotcat), with $77{,}717$ unique (artist, track) rows after deduplication. Each track carries audio features (\texttt{danceability}, \texttt{energy}, \texttt{valence}, \texttt{acousticness}), \texttt{popularity}~$\in [0, 100]$, and one of $114$ \texttt{track\_genre} labels.
+
+\para{Resolution.} \lastfm tracks are matched to \spotcat by lowercased, punctuation-stripped (artist, track) string equality. Unmatched tracks are dropped from the candidate pool but retained in the user's history (the LLM still sees them as text context).
+
+\subsection{Candidate-Pool Construction}
+\label{sec:pool}
+
+For each user we build a $20$-track candidate pool $\gC_u$ as the union of three sources:
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{Up to $5$ held-out positives} from $\gP_u$.
+    \item \textbf{Item-kNN candidates} (up to $8$): tracks with the highest sum of co-listening with the user's last $50$ history items, computed across all \lastfm users. Tracks already in the user's train history are removed.
+    \item \textbf{Popularity-stratified fillers} (remaining slots): the most popular \spotcat tracks from the user's top-$5$ inferred genres that are not in the user's history.
+\end{enumerate}
+The pool is then deduplicated and shuffled with a per-user random seed so that positive indices are randomized across methods. \emph{Every method ranks the same pool}, ensuring differences are attributable to the ranking decision rather than candidate generation.
+
+\subsection{Methods}
+\label{sec:methods}
+
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{\randmethod} -- uniform shuffle (sanity baseline).
+    \item \textbf{\popmethod} -- sort by \spotcat \texttt{popularity} descending.
+    \item \textbf{\itemknn} -- score each candidate by the sum of co-listening with the user's last-$50$ training history items.
+    \item \textbf{\cbf} -- TF-IDF over the concatenation of \texttt{track\_genre} and binned audio features (step $0.2$ on $[0,1]$); rank by cosine similarity to the user's mean training-history vector. This mirrors the content-based filter of \citet{boadana2025llm}.
+    \item \textbf{\claudehist} -- \claude with the prompt template of \citet{hou2024llm}: the user's last $50$ history items as a numbered list, followed by the $20$ shuffled candidates, with the instruction ``rank the candidates in order of how likely the user is to enjoy them''. Temperature $0.0$, $\max\_\text{tokens}=200$.
+    \item \textbf{\gpthist} -- \gpt with the identical prompt (cross-model robustness check).
+    \item \textbf{\claudenohist} -- \claude with the candidates only and instruction ``rank these tracks by general musical merit'', establishing a no-personalization floor.
+\end{itemize}
+LLM responses are parsed with a regex that extracts the numbered ranking; on parse failure we fall back to lexical matching against the candidate strings, then to a popularity sort with a logged warning. Each LLM arm is run three times per user; the median per-user metric is used for headline numbers. \claude is accessed via OpenRouter (\texttt{anthropic/claude-sonnet-4.5}); \gpt via the OpenAI API (\texttt{gpt-4.1}).
+
+\subsection{Evaluation Metrics}
+\label{sec:metrics}
+
+We adopt the multi-criterion framework of \citet{epure2025music} and report:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item \textbf{\recall} -- $|\{\text{positives in top 10}\}| / |\gP_u|$.
+    \item \textbf{\ndcg} -- standard DCG with binary relevance, normalized by the ideal DCG.
+    \item \textbf{\mrr} -- reciprocal rank of the first true positive.
+    \item \textbf{\arp} -- mean \spotcat popularity of the top-$10$ items \citep{abdollahpouri2019popularity}.
+    \item \textbf{\longtail} -- fraction of top-$10$ items whose popularity is below the global $50$th percentile.
+    \item \textbf{\genrediv} -- $|\{\text{distinct genres in top 10}\}| / 10$.
+    \item \textbf{EntitiesResolvedShare} (free-generation only) -- fraction of LLM-generated $(\text{artist}, \text{track})$ tuples that resolve to \spotcat.
+\end{itemize}
+
+\subsection{Statistical Analysis}
+\label{sec:stats}
+
+Each user contributes one paired observation per (method, metric). We compare each LLM arm against each baseline using a paired Wilcoxon signed-rank test \citep{wilcoxon1945individual}; effect sizes are Cohen's $d$ \citep{cohen1988statistical} on per-user paired differences. We report $95\%$ bootstrap confidence intervals on each metric's mean using $2{,}000$ resamples. Hypotheses H1--H4 are pre-registered (\secref{sec:intro}); we do not Bonferroni-correct across them since they address different scientific questions, and we report all $p$-values transparently.
+
+\subsection{Reproducibility}
+\label{sec:repro}
+
+We fix \texttt{numpy} seed $42$ throughout; baselines are deterministic. The three LLM runs at $T{=}0$ are near-deterministic in this regime: the median per-user run-to-run \ndcg standard deviation is $0.000$ for both LLM arms (mean: \claude $0.003$, \gpt $0.017$). Total API spend is $\$0.45$ ($244$K input tokens, $11.5$K output tokens across $168$ LLM calls); itemized in \secref{sec:results}. Total wall-clock runtime is $\approx 25$ minutes, dominated by API latency. The full pipeline -- pool construction, prompts, raw LLM outputs, per-user metrics, and statistical tests -- is released alongside the paper.

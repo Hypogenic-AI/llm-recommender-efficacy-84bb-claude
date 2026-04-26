@@ -1,0 +1,8 @@
+PDF: papers/2507.16708_Sguerra_Biases_LLM_Music_Profiles.pdf
+Total pages: 10
+Pages per chunk: 4
+
+Chunks:
+  2507.16708_Sguerra_Biases_LLM_Music_Profiles_chunk_001.pdf: pages 1-4
+  2507.16708_Sguerra_Biases_LLM_Music_Profiles_chunk_002.pdf: pages 5-8
+  2507.16708_Sguerra_Biases_LLM_Music_Profiles_chunk_003.pdf: pages 9-10

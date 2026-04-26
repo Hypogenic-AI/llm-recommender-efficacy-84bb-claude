@@ -1,0 +1,4 @@
+method,cost_usd
+claude_no_history,0.043698
+claude_with_history,0.25875
+gpt41_with_history,0.142202

@@ -1,0 +1,10 @@
+# Exclude large data files from git
+*
+
+# But keep documentation and small samples
+!.gitignore
+!README.md
+!**/README.md
+!**/samples.json
+!**/samples.csv
+!**/download.sh

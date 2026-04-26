@@ -1,0 +1,8 @@
+PDF: papers/2508.11671_Hudac_LLM_Agents_Music_vs_CBF.pdf
+Total pages: 12
+Pages per chunk: 4
+
+Chunks:
+  2508.11671_Hudac_LLM_Agents_Music_vs_CBF_chunk_001.pdf: pages 1-4
+  2508.11671_Hudac_LLM_Agents_Music_vs_CBF_chunk_002.pdf: pages 5-8
+  2508.11671_Hudac_LLM_Agents_Music_vs_CBF_chunk_003.pdf: pages 9-12

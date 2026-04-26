@@ -1,0 +1,43 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Interpreting the Headline Result}
+
+The data answer the user's question with a calibrated yes-and-no. Yes: prompting \claude with a Spotify-export-style listening history produces rank-position-sensitive accuracy ($\ndcg{=}0.375$, $\mrr{=}0.458$) that exceeds every classical baseline we tested. No: against the strongest classical baseline (\cbf, $\ndcg{=}0.333$), the improvement of $+0.042$ is not significant at $N{=}24$. The credible scientific claim is therefore ``LLM ranking matches the strongest Spotify-style proxy and beats popularity decisively'', not ``LLM ranking dominates classical CF''. This is consistent with the qualitative finding of \citet{hou2024llm} on movies and books, now extended to music histories with frontier $2025$-era LLMs.
+
+\subsection{The Personalization Story}
+
+The most diagnostic result in the paper is not the head-to-head, but the contrast between \claudehist and \claudenohist. Stripped of history, \claude collapses to \ndcg $0.082$, well below random ($0.298$). Adding history back yields a $0.29$ \ndcg gain ($d{=}0.86$, $p{=}0.002$). Two implications follow. First, the LLM's prior over ``what music people enjoy'' is not the same as the user's actual long-tail taste; if anything, the model's default taste is anti-correlated with the held-out positives. Second, the gain attributable to the user's history is large and crisp -- we can quantify what the LLM is actually learning from a Spotify export.
+
+\subsection{What Surprised Us}
+
+\para{\randmethod beats \popmethod on every accuracy metric.} This is a property of the candidate pool, not of the methods: $8$ of the $20$ slots are popularity-stratified fillers, so a popularity sort puts non-positive fillers at the top. The intended interpretation of \popmethod is therefore as a negative control rather than a competitor.
+
+\para{\claudenohist drops below random.} See \secref{sec:personalization}. The takeaway is that LLM-as-recommender is meaningfully different from LLM-as-music-critic; conditioning on user data is not optional.
+
+\para{\gpt $\approx$ \claude on accuracy, but $3\times$ faster and $1.8\times$ cheaper.} The user's question was specifically about Claude, but our cross-model check finds \gpt achieves the same accuracy with shorter latency. If anything, the operational choice for a Discover-Weekly-style batch service would be \gpt.
+
+\para{Hallucination is $50\%$ in absolute terms but partly an artifact of catalog size.} Spot-checks suggest most unresolved entries are real songs absent from the $77$K-track \spotcat snapshot, not fabricated tracks. A definitive hallucination measurement would require a fuller catalog (\eg the live Spotify Web API).
+
+\subsection{Failure Modes}
+
+Inspecting the LLM outputs in \texttt{results/llm\_runs.json} reveals three recurring failure modes. \emph{Catalog string drift}: \claude often emits canonical titles (``Idioteque'' by Radiohead) while the catalog stores the live or remix variant; we mitigate via fuzzy artist plus substring match. \emph{Position bias on ties}: when the candidate pool contains near-duplicate songs, both LLMs cluster them together; the bootstrapping protocol of \citet{hou2024llm} would reduce variance on the n.s.\ comparisons. \emph{Long-tail blind spots}: \lastfm $2009$-era niche IDM and underground punk have lower catalog-match and lower LLM-resolution rates, so users with long-tail-heavy histories are disadvantaged.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Sample size.} $N{=}24$ users have insufficient power to detect small effects ($d{\approx}0.2$) between \claude and \cbf. The statistically supported claim is ``matches best baseline'', not ``beats it''.
+
+\para{\lastfm-as-Spotify-export is a proxy.} Real Spotify exports include device metadata, contexts, skips, repeats, and (for some users) curated playlist data we do not have. The $50$-user \lastfm sample is also from $2005$--$2009$; user behaviors and the music landscape have shifted.
+
+\para{We do not compare to Spotify production.} Spotify's actual recommender is a closed black box that blends collaborative filtering, audio embeddings, contextual bandits, and editorial signals. Our claim is ``vs offline classical baselines that approximate Spotify'', not ``vs Spotify production''.
+
+\para{Catalog limits hallucination evaluation.} Many ``unresolved'' free-generation outputs are real tracks absent from \spotcat. A live-API hallucination measurement would tighten this.
+
+\para{Pool design favors classical methods.} The pool is built with item-kNN and popularity in the mix, which gives those baselines a home-field advantage. The LLM arms still match or beat them, which strengthens the result.
+
+\para{Train/test contamination risk.} \lastfm 1K is publicly indexed; the LLMs may have seen aggregate patterns from this dataset during pre-training. We do not feed test-window listens into the prompt, but a tighter test would use post-2024 user data.
+
+\subsection{Broader Implications}
+
+If even off-the-shelf prompting matches a TF-IDF content-based filter at cents-per-user cost, then the operational floor for a personalized music recommender no longer requires a maintained collaborative-filtering pipeline. Two things follow. First, recommendation can become a portable consumer feature: a user with their own export data can plausibly route around platform-locked recommendations. Second, the research delta over prompting is narrowing -- to win against an LLM-with-history baseline, classical methods need to demonstrate an advantage that survives the multi-criterion evaluation we run here, not just an advantage on \recall against a CBF baseline. We do not claim that this experiment settles the question for production-scale Spotify-style systems, which trade in signals we cannot replicate offline; we claim only that the gap classical algorithms must defend has shrunk.

@@ -1,0 +1,5 @@
+Resource finding phase completed successfully.
+Timestamp: 2026-04-26T03:46:23+00:00
+Papers downloaded: 19
+Datasets downloaded: 2 (Spotify Tracks Dataset 114K, Last.fm 1K 50-user sample) + 1 bundled (Sguerra NL profiles in code/recsys25_llm_biases/data/)
+Repositories cloned: 6 (recsys25_llm_biases, LLMRank, LLM4RS, LLM-Next-Item-Rec, LLMs-as-Zero-Shot-Conversational-RecSys, text2tracks)

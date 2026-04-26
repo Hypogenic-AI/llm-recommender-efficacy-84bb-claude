@@ -1,0 +1,481 @@
+user_id,model,artist_pred,track_pred,resolved,match_type,popularity,track_genre
+user_000021,anthropic/claude-sonnet-4.5,Buzzcocks,Ever Fallen in Love (With Someone You Shouldn't've),False,,,
+user_000021,anthropic/claude-sonnet-4.5,The Replacements,Alex Chilton,False,,,
+user_000021,anthropic/claude-sonnet-4.5,Guided by Voices,Game of Pricks,True,exact,55.0,power-pop
+user_000021,anthropic/claude-sonnet-4.5,Superchunk,Slack Motherfucker,False,,,
+user_000021,anthropic/claude-sonnet-4.5,The Undertones,Teenage Kicks,False,,,
+user_000021,anthropic/claude-sonnet-4.5,Dinosaur Jr.,Feel the Pain,True,exact,59.0,power-pop
+user_000021,anthropic/claude-sonnet-4.5,Hüsker Dü,Makes No Sense at All,False,,,
+user_000021,anthropic/claude-sonnet-4.5,The Marked Men,Time,False,,,
+user_000021,anthropic/claude-sonnet-4.5,Dillinger Four,Doublewhiskeycokenoice,False,,,
+user_000021,anthropic/claude-sonnet-4.5,The Descendents,Suburban Home,False,,,
+user_000021,gpt-4.1,Buzzcocks,Ever Fallen in Love (With Someone You Shouldn't've),False,,,
+user_000021,gpt-4.1,Supergrass,Alright,False,,,
+user_000021,gpt-4.1,The Replacements,Alex Chilton,False,,,
+user_000021,gpt-4.1,The Raconteurs,"Steady, As She Goes",True,exact,70.0,blues
+user_000021,gpt-4.1,The Undertones,Teenage Kicks,False,,,
+user_000021,gpt-4.1,The Hives,Hate To Say I Told You So,True,exact,69.0,garage
+user_000021,gpt-4.1,The Stone Roses,She Bangs The Drums,False,,,
+user_000021,gpt-4.1,The Vaselines,Son of a Gun,False,,,
+user_000021,gpt-4.1,The Modern Lovers,Roadrunner,False,,,
+user_000021,gpt-4.1,The Kinks,Victoria,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Covenant,Dead Stars,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Assemblage 23,Let Me Be Your Armor,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Icon of Coil,Simulated,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Rotersand,Exterminate Annihilate Destroy,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Combichrist,What the Fuck is Wrong with You,False,,,
+user_000041,anthropic/claude-sonnet-4.5,And One,Panzermensch,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Suicide Commando,Bind Torture Kill,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Front Line Assembly,Maniacal,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Mesh,Leave You Nothing,False,,,
+user_000041,anthropic/claude-sonnet-4.5,Neuroticfish,Waking Up the Ghost,False,,,
+user_000041,gpt-4.1,Covenant,Call the Ships to Port,False,,,
+user_000041,gpt-4.1,Icon of Coil,Shallow Nation,False,,,
+user_000041,gpt-4.1,And One,Military Fashion Show,False,,,
+user_000041,gpt-4.1,Front 242,Headhunter,True,artist+substr,28.0,industrial
+user_000041,gpt-4.1,De/Vision,Your Hands On My Skin,False,,,
+user_000041,gpt-4.1,Camouflage,The Great Commandment,False,,,
+user_000041,gpt-4.1,The Chemical Brothers,Block Rockin' Beats,True,exact,54.0,breakbeat
+user_000041,gpt-4.1,Faithless,Insomnia,True,artist+substr,17.0,trip-hop
+user_000041,gpt-4.1,In Strict Confidence,Zauberschloss,False,,,
+user_000041,gpt-4.1,Mesh,Friends Like These,False,,,
+user_000121,anthropic/claude-sonnet-4.5,Interpol,Obstacle 1,False,,,
+user_000121,anthropic/claude-sonnet-4.5,Editors,Munich,False,,,
+user_000121,anthropic/claude-sonnet-4.5,Bloc Party,Banquet,False,,,
+user_000121,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000121,anthropic/claude-sonnet-4.5,Underworld,Born Slippy .NUXX,False,,,
+user_000121,anthropic/claude-sonnet-4.5,Franz Ferdinand,Take Me Out,True,exact,79.0,alt-rock
+user_000121,anthropic/claude-sonnet-4.5,Joy Division,Love Will Tear Us Apart,True,exact,0.0,alt-rock
+user_000121,anthropic/claude-sonnet-4.5,Covenant,Dead Stars,False,,,
+user_000121,anthropic/claude-sonnet-4.5,Arctic Monkeys,I Bet You Look Good on the Dancefloor,True,exact,75.0,garage
+user_000121,anthropic/claude-sonnet-4.5,Placebo,Every You Every Me,False,,,
+user_000121,gpt-4.1,Steven Wilson,The Raven That Refused to Sing,False,,,
+user_000121,gpt-4.1,Editors,Munich,False,,,
+user_000121,gpt-4.1,Interpol,Evil,False,,,
+user_000121,gpt-4.1,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000121,gpt-4.1,Depeche Mode,Enjoy the Silence,False,,,
+user_000121,gpt-4.1,Placebo,Every You Every Me,False,,,
+user_000121,gpt-4.1,Justice,D.A.N.C.E.,True,exact,66.0,electronic
+user_000121,gpt-4.1,Muse,Hysteria,False,,,
+user_000121,gpt-4.1,IAMX,Spit It Out,False,,,
+user_000121,gpt-4.1,Arcade Fire,Rebellion (Lies),False,,,
+user_000161,anthropic/claude-sonnet-4.5,A Perfect Circle,The Outsider,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Gojira,Flying Whales,True,exact,61.0,death-metal
+user_000161,anthropic/claude-sonnet-4.5,Karnivool,Goliath,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Deftones,Change (In the House of Flies),True,exact,77.0,alt-rock
+user_000161,anthropic/claude-sonnet-4.5,Steven Wilson,The Raven That Refused to Sing,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Soen,Lotus,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Riverside,Second Life Syndrome,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Tesseract,Nocturne,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Leprous,The Price,False,,,
+user_000161,anthropic/claude-sonnet-4.5,Anathema,"Untouchable, Part 1",True,exact,43.0,goth
+user_000161,gpt-4.1,A Perfect Circle,The Outsider,False,,,
+user_000161,gpt-4.1,Steven Wilson,Drive Home,True,exact,47.0,metal
+user_000161,gpt-4.1,Riverside,Second Life Syndrome,False,,,
+user_000161,gpt-4.1,Gojira,Silvera,True,exact,62.0,death-metal
+user_000161,gpt-4.1,Karnivool,New Day,False,,,
+user_000161,gpt-4.1,Anathema,"Untouchable, Part 1",True,exact,43.0,goth
+user_000161,gpt-4.1,Soen,Lotus,False,,,
+user_000161,gpt-4.1,The Mars Volta,The Widow,False,,,
+user_000161,gpt-4.1,Pain of Salvation,Iter Impius,False,,,
+user_000161,gpt-4.1,Devin Townsend Project,Deadhead,False,,,
+user_000181,anthropic/claude-sonnet-4.5,Pavement,Cut Your Hair,False,,,
+user_000181,anthropic/claude-sonnet-4.5,Pixies,Debaser,False,,,
+user_000181,anthropic/claude-sonnet-4.5,Interpol,Obstacle 1,False,,,
+user_000181,anthropic/claude-sonnet-4.5,The Replacements,Bastards of Young,False,,,
+user_000181,anthropic/claude-sonnet-4.5,Violent Femmes,Blister in the Sun,True,exact,71.0,acoustic
+user_000181,anthropic/claude-sonnet-4.5,Franz Ferdinand,Take Me Out,True,exact,79.0,alt-rock
+user_000181,anthropic/claude-sonnet-4.5,The White Stripes,Fell in Love with a Girl,True,exact,72.0,blues
+user_000181,anthropic/claude-sonnet-4.5,Arctic Monkeys,I Bet You Look Good on the Dancefloor,True,exact,75.0,garage
+user_000181,anthropic/claude-sonnet-4.5,The Hives,Hate to Say I Told You So,True,exact,69.0,garage
+user_000181,anthropic/claude-sonnet-4.5,Modest Mouse,Float On,False,,,
+user_000181,gpt-4.1,Violent Femmes,Blister in the Sun,True,exact,71.0,acoustic
+user_000181,gpt-4.1,Pixies,Debaser,False,,,
+user_000181,gpt-4.1,The Replacements,Alex Chilton,False,,,
+user_000181,gpt-4.1,The Raveonettes,Love in a Trashcan,False,,,
+user_000181,gpt-4.1,The Hives,Hate to Say I Told You So,True,exact,69.0,garage
+user_000181,gpt-4.1,The White Stripes,Fell In Love With A Girl,True,exact,72.0,blues
+user_000181,gpt-4.1,Blur,Coffee & TV,False,,,
+user_000181,gpt-4.1,The Libertines,Can't Stand Me Now,True,exact,62.0,garage
+user_000181,gpt-4.1,Cake,Short Skirt/Long Jacket,False,,,
+user_000181,gpt-4.1,The Dandy Warhols,Bohemian Like You,False,,,
+user_000221,anthropic/claude-sonnet-4.5,Stone Temple Pilots,Interstate Love Song,True,artist+substr,73.0,grunge
+user_000221,anthropic/claude-sonnet-4.5,Garbage,Stupid Girl,False,,,
+user_000221,anthropic/claude-sonnet-4.5,Chevelle,The Red,True,exact,70.0,grunge
+user_000221,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000221,anthropic/claude-sonnet-4.5,Bush,Glycerine,True,artist+substr,63.0,grunge
+user_000221,anthropic/claude-sonnet-4.5,Audioslave,Like a Stone,True,exact,78.0,alt-rock
+user_000221,anthropic/claude-sonnet-4.5,Portishead,Glory Box,True,exact,0.0,electronic
+user_000221,anthropic/claude-sonnet-4.5,Three Days Grace,I Hate Everything About You,True,exact,72.0,grunge
+user_000221,anthropic/claude-sonnet-4.5,Zero 7,Destiny,False,,,
+user_000221,anthropic/claude-sonnet-4.5,Alice in Chains,Man in the Box,True,exact,75.0,alt-rock
+user_000221,gpt-4.1,Garbage,Only Happy When It Rains,False,,,
+user_000221,gpt-4.1,Depeche Mode,Personal Jesus,False,,,
+user_000221,gpt-4.1,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000221,gpt-4.1,The White Stripes,Seven Nation Army,True,exact,84.0,alt-rock
+user_000221,gpt-4.1,Muse,Starlight,False,,,
+user_000221,gpt-4.1,The Killers,Somebody Told Me,True,exact,0.0,alt-rock
+user_000221,gpt-4.1,Portishead,Glory Box,True,exact,0.0,electronic
+user_000221,gpt-4.1,Paramore,Misery Business,True,exact,1.0,emo
+user_000221,gpt-4.1,Yeah Yeah Yeahs,Heads Will Roll,True,exact,0.0,alt-rock
+user_000221,gpt-4.1,The Chemical Brothers,Galvanize,True,exact,64.0,breakbeat
+user_000281,anthropic/claude-sonnet-4.5,Television,Marquee Moon,False,,,
+user_000281,anthropic/claude-sonnet-4.5,Pavement,Gold Soundz,False,,,
+user_000281,anthropic/claude-sonnet-4.5,The Replacements,Bastards of Young,False,,,
+user_000281,anthropic/claude-sonnet-4.5,Wire,Mannequin,False,,,
+user_000281,anthropic/claude-sonnet-4.5,Interpol,Obstacle 1,False,,,
+user_000281,anthropic/claude-sonnet-4.5,The Smiths,There Is a Light That Never Goes Out,True,artist+substr,80.0,punk-rock
+user_000281,anthropic/claude-sonnet-4.5,Teenage Fanclub,The Concept,False,,,
+user_000281,anthropic/claude-sonnet-4.5,R.E.M.,Don't Go Back to Rockville,False,,,
+user_000281,anthropic/claude-sonnet-4.5,The Feelies,Crazy Rhythms,False,,,
+user_000281,anthropic/claude-sonnet-4.5,Yo La Tengo,Autumn Sweater,False,,,
+user_000281,gpt-4.1,Television,Marquee Moon,False,,,
+user_000281,gpt-4.1,The Jesus and Mary Chain,Just Like Honey,True,exact,61.0,punk-rock
+user_000281,gpt-4.1,The Feelies,Crazy Rhythms,False,,,
+user_000281,gpt-4.1,The Zombies,This Will Be Our Year,True,exact,45.0,british
+user_000281,gpt-4.1,The Replacements,Alex Chilton,False,,,
+user_000281,gpt-4.1,Spoon,The Way We Get By,False,,,
+user_000281,gpt-4.1,Belle and Sebastian,The Boy With The Arab Strap,False,,,
+user_000281,gpt-4.1,Yo La Tengo,Autumn Sweater,False,,,
+user_000281,gpt-4.1,The Kinks,Waterloo Sunset,True,artist+substr,38.0,british
+user_000281,gpt-4.1,Wire,Outdoor Miner,False,,,
+user_000303,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000303,anthropic/claude-sonnet-4.5,Mazzy Star,Fade Into You,True,exact,79.0,alt-rock
+user_000303,anthropic/claude-sonnet-4.5,Jeff Buckley,Hallelujah,True,exact,71.0,singer-songwriter
+user_000303,anthropic/claude-sonnet-4.5,David Bowie,Life on Mars?,False,,,
+user_000303,anthropic/claude-sonnet-4.5,Sigur Rós,Hoppípolla,False,,,
+user_000303,anthropic/claude-sonnet-4.5,Talking Heads,Once in a Lifetime,True,artist+substr,0.0,funk
+user_000303,anthropic/claude-sonnet-4.5,Boards of Canada,Roygbiv,True,exact,59.0,ambient
+user_000303,anthropic/claude-sonnet-4.5,Fleetwood Mac,Dreams,False,,,
+user_000303,anthropic/claude-sonnet-4.5,Damien Rice,The Blower's Daughter,True,exact,0.0,singer-songwriter
+user_000303,anthropic/claude-sonnet-4.5,Air,All I Need,False,,,
+user_000303,gpt-4.1,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000303,gpt-4.1,David Bowie,Life On Mars?,False,,,
+user_000303,gpt-4.1,The Stone Roses,I Wanna Be Adored,False,,,
+user_000303,gpt-4.1,Fleetwood Mac,Dreams,False,,,
+user_000303,gpt-4.1,Blur,Coffee & TV,False,,,
+user_000303,gpt-4.1,The Smashing Pumpkins,1979,False,,,
+user_000303,gpt-4.1,The National,Fake Empire,False,,,
+user_000303,gpt-4.1,Tame Impala,The Less I Know The Better,False,,,
+user_000303,gpt-4.1,Sia,Breathe Me,False,,,
+user_000303,gpt-4.1,The Chemical Brothers,Star Guitar,True,exact,51.0,breakbeat
+user_000343,anthropic/claude-sonnet-4.5,New Order,Blue Monday,True,artist+substr,66.0,synth-pop
+user_000343,anthropic/claude-sonnet-4.5,Depeche Mode,Enjoy the Silence,False,,,
+user_000343,anthropic/claude-sonnet-4.5,Röyksopp,Eple,True,exact,55.0,trip-hop
+user_000343,anthropic/claude-sonnet-4.5,Ladytron,Destroy Everything You Touch,True,exact,47.0,synth-pop
+user_000343,anthropic/claude-sonnet-4.5,Goldfrapp,Ooh La La,True,exact,18.0,synth-pop
+user_000343,anthropic/claude-sonnet-4.5,The Smiths,How Soon Is Now?,True,exact,1.0,punk-rock
+user_000343,anthropic/claude-sonnet-4.5,Orchestral Manoeuvres in the Dark,Enola Gay,True,artist+substr,69.0,synth-pop
+user_000343,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000343,anthropic/claude-sonnet-4.5,Portishead,Glory Box,True,exact,0.0,electronic
+user_000343,anthropic/claude-sonnet-4.5,Blur,Song 2,True,artist+substr,0.0,alt-rock
+user_000343,gpt-4.1,Depeche Mode,Never Let Me Down Again,False,,,
+user_000343,gpt-4.1,Ladytron,Seventeen,True,exact,63.0,synth-pop
+user_000343,gpt-4.1,The Human League,Seconds,False,,,
+user_000343,gpt-4.1,The Jesus and Mary Chain,Just Like Honey,True,exact,61.0,punk-rock
+user_000343,gpt-4.1,Goldfrapp,Strict Machine,True,exact,12.0,synth-pop
+user_000343,gpt-4.1,The Rapture,House of Jealous Lovers,False,,,
+user_000343,gpt-4.1,Interpol,Obstacle 1,False,,,
+user_000343,gpt-4.1,Soft Cell,"Say Hello, Wave Goodbye",True,artist+substr,23.0,synth-pop
+user_000343,gpt-4.1,The Knife,Heartbeats,True,exact,50.0,goth
+user_000343,gpt-4.1,The Sisters of Mercy,Lucretia My Reflection,False,,,
+user_000363,anthropic/claude-sonnet-4.5,Portishead,Glory Box,True,exact,0.0,electronic
+user_000363,anthropic/claude-sonnet-4.5,Zero 7,Destiny,False,,,
+user_000363,anthropic/claude-sonnet-4.5,Air,La Femme d'Argent,True,exact,61.0,ambient
+user_000363,anthropic/claude-sonnet-4.5,Chet Baker,My Funny Valentine,True,exact,0.0,jazz
+user_000363,anthropic/claude-sonnet-4.5,Goldfrapp,Strict Machine,True,exact,12.0,synth-pop
+user_000363,anthropic/claude-sonnet-4.5,Esthero,Heaven Sent,False,,,
+user_000363,anthropic/claude-sonnet-4.5,Wax Tailor,Que Sera,True,exact,60.0,trip-hop
+user_000363,anthropic/claude-sonnet-4.5,Charles Mingus,Moanin',False,,,
+user_000363,anthropic/claude-sonnet-4.5,Groove Armada,At the River,True,exact,59.0,trip-hop
+user_000363,anthropic/claude-sonnet-4.5,Billie Holiday,Strange Fruit,False,,,
+user_000363,gpt-4.1,Air,All I Need,False,,,
+user_000363,gpt-4.1,Zero 7,Destiny,False,,,
+user_000363,gpt-4.1,St. Germain,Rose Rouge,False,,,
+user_000363,gpt-4.1,Morcheeba,Otherwise,True,exact,56.0,trip-hop
+user_000363,gpt-4.1,Chet Baker,My Funny Valentine,True,exact,0.0,jazz
+user_000363,gpt-4.1,Goldfrapp,Utopia,False,,,
+user_000363,gpt-4.1,Fiona Apple,Criminal,True,exact,63.0,piano
+user_000363,gpt-4.1,Gotan Project,Santa Maria (del Buen Ayre),False,,,
+user_000363,gpt-4.1,Sade,No Ordinary Love,True,exact,67.0,british
+user_000363,gpt-4.1,The Cinematic Orchestra,To Build A Home,False,,,
+user_000384,anthropic/claude-sonnet-4.5,The Vaccines,If You Wanna,False,,,
+user_000384,anthropic/claude-sonnet-4.5,Franz Ferdinand,Take Me Out,True,exact,79.0,alt-rock
+user_000384,anthropic/claude-sonnet-4.5,Bloc Party,Banquet,False,,,
+user_000384,anthropic/claude-sonnet-4.5,The Hives,Hate To Say I Told You So,True,exact,69.0,garage
+user_000384,anthropic/claude-sonnet-4.5,Interpol,Obstacle 1,False,,,
+user_000384,anthropic/claude-sonnet-4.5,Babyshambles,Fuck Forever,False,,,
+user_000384,anthropic/claude-sonnet-4.5,Kaiser Chiefs,I Predict A Riot,False,,,
+user_000384,anthropic/claude-sonnet-4.5,The Coral,Dreaming Of You,False,,,
+user_000384,anthropic/claude-sonnet-4.5,Maximo Park,Apply Some Pressure,False,,,
+user_000384,anthropic/claude-sonnet-4.5,The Fratellis,Chelsea Dagger,True,exact,26.0,garage
+user_000384,gpt-4.1,Franz Ferdinand,Take Me Out,True,exact,79.0,alt-rock
+user_000384,gpt-4.1,The Cribs,Men's Needs,False,,,
+user_000384,gpt-4.1,Bloc Party,Banquet,False,,,
+user_000384,gpt-4.1,Kaiser Chiefs,I Predict A Riot,False,,,
+user_000384,gpt-4.1,Yeah Yeah Yeahs,Maps,False,,,
+user_000384,gpt-4.1,Interpol,Obstacle 1,False,,,
+user_000384,gpt-4.1,The Kooks,Naive,True,exact,1.0,indie
+user_000384,gpt-4.1,The Hives,Hate To Say I Told You So,True,exact,69.0,garage
+user_000384,gpt-4.1,The Vaccines,If You Wanna,False,,,
+user_000384,gpt-4.1,Supergrass,Alright,False,,,
+user_000404,anthropic/claude-sonnet-4.5,Fever Ray,If I Had A Heart,False,,,
+user_000404,anthropic/claude-sonnet-4.5,Opeth,Blackwater Park,True,exact,42.0,death-metal
+user_000404,anthropic/claude-sonnet-4.5,Ulver,Capitel I: I Troldskog Faren Vild,False,,,
+user_000404,anthropic/claude-sonnet-4.5,Darkthrone,Transilvanian Hunger,True,artist+substr,48.0,black-metal
+user_000404,anthropic/claude-sonnet-4.5,Goldfrapp,Ooh La La,True,exact,18.0,synth-pop
+user_000404,anthropic/claude-sonnet-4.5,Gojira,Flying Whales,True,exact,61.0,death-metal
+user_000404,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000404,anthropic/claude-sonnet-4.5,Alcest,Souvenirs d'un autre monde,True,exact,42.0,black-metal
+user_000404,anthropic/claude-sonnet-4.5,Little Dragon,Ritual Union,True,exact,59.0,trip-hop
+user_000404,anthropic/claude-sonnet-4.5,Meshuggah,Bleed,True,exact,60.0,death-metal
+user_000404,gpt-4.1,Health,Die Slow,False,,,
+user_000404,gpt-4.1,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000404,gpt-4.1,Opeth,Windowpane,True,exact,55.0,death-metal
+user_000404,gpt-4.1,Mogwai,Auto Rock,False,,,
+user_000404,gpt-4.1,Interpol,Evil,False,,,
+user_000404,gpt-4.1,Carpenter Brut,Turbo Killer,False,,,
+user_000404,gpt-4.1,Depeche Mode,Enjoy the Silence,False,,,
+user_000404,gpt-4.1,Ulver,Capitel I: I Troldskog Faren Vild,False,,,
+user_000404,gpt-4.1,Justice,Genesis,False,,,
+user_000404,gpt-4.1,Boards of Canada,Roygbiv,True,exact,59.0,ambient
+user_000445,anthropic/claude-sonnet-4.5,Danzig,Mother,True,exact,76.0,hard-rock
+user_000445,anthropic/claude-sonnet-4.5,White Zombie,Thunder Kiss '65,True,exact,1.0,alt-rock
+user_000445,anthropic/claude-sonnet-4.5,Alice in Chains,Man in the Box,True,exact,75.0,alt-rock
+user_000445,anthropic/claude-sonnet-4.5,Sentenced,Killing Me Killing You,False,,,
+user_000445,anthropic/claude-sonnet-4.5,Paradise Lost,As I Die,False,,,
+user_000445,anthropic/claude-sonnet-4.5,Lacuna Coil,Our Truth,False,,,
+user_000445,anthropic/claude-sonnet-4.5,The Cult,She Sells Sanctuary,True,exact,71.0,hard-rock
+user_000445,anthropic/claude-sonnet-4.5,Turbonegro,All My Friends Are Dead,False,,,
+user_000445,anthropic/claude-sonnet-4.5,Amorphis,House of Sleep,False,,,
+user_000445,anthropic/claude-sonnet-4.5,Skid Row,Youth Gone Wild,False,,,
+user_000445,gpt-4.1,The Cult,She Sells Sanctuary,True,exact,71.0,hard-rock
+user_000445,gpt-4.1,Sisters of Mercy,Lucretia My Reflection,False,,,
+user_000445,gpt-4.1,Paradise Lost,Say Just Words,False,,,
+user_000445,gpt-4.1,Danzig,Mother,True,exact,76.0,hard-rock
+user_000445,gpt-4.1,Billy Idol,Rebel Yell,True,exact,1.0,hard-rock
+user_000445,gpt-4.1,Marilyn Manson,The Beautiful People,True,exact,1.0,alt-rock
+user_000445,gpt-4.1,Sentenced,Noose,False,,,
+user_000445,gpt-4.1,The Mission,Wasteland,False,,,
+user_000445,gpt-4.1,Deathstars,Cyanide,False,,,
+user_000445,gpt-4.1,Lordi,Hard Rock Hallelujah,True,exact,55.0,heavy-metal
+user_000507,anthropic/claude-sonnet-4.5,Soundgarden,Black Hole Sun,True,exact,0.0,alt-rock
+user_000507,anthropic/claude-sonnet-4.5,Alice In Chains,Them Bones,True,exact,69.0,grunge
+user_000507,anthropic/claude-sonnet-4.5,Tool,Schism,True,exact,70.0,alt-rock
+user_000507,anthropic/claude-sonnet-4.5,Black Sabbath,War Pigs,True,exact,33.0,hard-rock
+user_000507,anthropic/claude-sonnet-4.5,Iron Maiden,Hallowed Be Thy Name,True,artist+substr,68.0,hard-rock
+user_000507,anthropic/claude-sonnet-4.5,Deep Purple,Child In Time,True,exact,55.0,psych-rock
+user_000507,anthropic/claude-sonnet-4.5,Led Zeppelin,Since I've Been Loving You,True,artist+substr,62.0,hard-rock
+user_000507,anthropic/claude-sonnet-4.5,Stone Temple Pilots,Interstate Love Song,True,artist+substr,73.0,grunge
+user_000507,anthropic/claude-sonnet-4.5,Gojira,Flying Whales,True,exact,61.0,death-metal
+user_000507,anthropic/claude-sonnet-4.5,Steven Wilson,The Raven That Refused To Sing,False,,,
+user_000507,gpt-4.1,Rainbow,Stargazer,True,exact,60.0,blues
+user_000507,gpt-4.1,Queensrÿche,Silent Lucidity,True,artist+substr,63.0,hard-rock
+user_000507,gpt-4.1,Alice In Chains,Nutshell,True,exact,71.0,alt-rock
+user_000507,gpt-4.1,King Crimson,Epitaph,True,artist+substr,54.0,j-rock
+user_000507,gpt-4.1,Soundgarden,Fell On Black Days,True,exact,68.0,grunge
+user_000507,gpt-4.1,Blue Öyster Cult,(Don't Fear) The Reaper,True,exact,76.0,blues
+user_000507,gpt-4.1,Ghost,Cirice,True,exact,63.0,hard-rock
+user_000507,gpt-4.1,Steven Wilson,The Raven That Refused To Sing,False,,,
+user_000507,gpt-4.1,Deep Purple,Child In Time,True,exact,55.0,psych-rock
+user_000507,gpt-4.1,Opeth,Windowpane,True,exact,55.0,death-metal
+user_000587,anthropic/claude-sonnet-4.5,Pixies,Where Is My Mind?,True,exact,77.0,alt-rock
+user_000587,anthropic/claude-sonnet-4.5,The Verve,Bitter Sweet Symphony,True,exact,80.0,alt-rock
+user_000587,anthropic/claude-sonnet-4.5,Stone Temple Pilots,Interstate Love Song,True,artist+substr,73.0,grunge
+user_000587,anthropic/claude-sonnet-4.5,Collective Soul,The World I Know,True,exact,64.0,grunge
+user_000587,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000587,anthropic/claude-sonnet-4.5,Air,La Femme d'Argent,True,exact,61.0,ambient
+user_000587,anthropic/claude-sonnet-4.5,Soundgarden,Black Hole Sun,True,exact,0.0,alt-rock
+user_000587,anthropic/claude-sonnet-4.5,Thievery Corporation,Lebanese Blonde,True,exact,56.0,trip-hop
+user_000587,anthropic/claude-sonnet-4.5,Tom Petty and the Heartbreakers,Free Fallin',False,,,
+user_000587,anthropic/claude-sonnet-4.5,Zero 7,Destiny,False,,,
+user_000587,gpt-4.1,Gorillaz,Clint Eastwood,True,exact,3.0,alternative
+user_000587,gpt-4.1,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000587,gpt-4.1,Soundgarden,Black Hole Sun,True,exact,0.0,alt-rock
+user_000587,gpt-4.1,The Verve,Bitter Sweet Symphony,True,exact,80.0,alt-rock
+user_000587,gpt-4.1,The Rolling Stones,Gimme Shelter,True,exact,0.0,british
+user_000587,gpt-4.1,Zero 7,Destiny,False,,,
+user_000587,gpt-4.1,Blur,Coffee & TV,False,,,
+user_000587,gpt-4.1,Portishead,Glory Box,True,exact,0.0,electronic
+user_000587,gpt-4.1,The Killers,All These Things That I've Done,False,,,
+user_000587,gpt-4.1,Fatboy Slim,Praise You,False,,,
+user_000627,anthropic/claude-sonnet-4.5,Röyksopp,Eple,True,exact,55.0,trip-hop
+user_000627,anthropic/claude-sonnet-4.5,Daft Punk,Digital Love,False,,,
+user_000627,anthropic/claude-sonnet-4.5,Underworld,Born Slippy .NUXX,False,,,
+user_000627,anthropic/claude-sonnet-4.5,Fatboy Slim,"Right Here, Right Now",False,,,
+user_000627,anthropic/claude-sonnet-4.5,Basement Jaxx,Where's Your Head At,False,,,
+user_000627,anthropic/claude-sonnet-4.5,Zero 7,Destiny,False,,,
+user_000627,anthropic/claude-sonnet-4.5,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000627,anthropic/claude-sonnet-4.5,Orbital,Halcyon + On + On,True,artist+substr,11.0,breakbeat
+user_000627,anthropic/claude-sonnet-4.5,Leftfield,Phat Planet,False,,,
+user_000627,anthropic/claude-sonnet-4.5,Chicane,Offshore,False,,,
+user_000627,gpt-4.1,Goldfrapp,Ooh La La,True,exact,18.0,synth-pop
+user_000627,gpt-4.1,Underworld,Born Slippy (Nuxx),False,,,
+user_000627,gpt-4.1,Massive Attack,Teardrop,True,exact,0.0,electronic
+user_000627,gpt-4.1,Justice,D.A.N.C.E.,True,exact,66.0,electronic
+user_000627,gpt-4.1,Daft Punk,Digital Love,False,,,
+user_000627,gpt-4.1,Portishead,Glory Box,True,exact,0.0,electronic
+user_000627,gpt-4.1,Junior Jack,Stupidisco,False,,,
+user_000627,gpt-4.1,Basement Jaxx,Red Alert,False,,,
+user_000627,gpt-4.1,Röyksopp,Eple,True,exact,55.0,trip-hop
+user_000627,gpt-4.1,Stardust,Music Sounds Better With You,False,,,
+user_000668,anthropic/claude-sonnet-4.5,Snow Patrol,Chasing Cars,True,exact,80.0,rock
+user_000668,anthropic/claude-sonnet-4.5,Coldplay,The Scientist,True,exact,2.0,pop
+user_000668,anthropic/claude-sonnet-4.5,Travis,Why Does It Always Rain on Me?,False,,,
+user_000668,anthropic/claude-sonnet-4.5,Dario Marianelli,Becoming Jane,False,,,
+user_000668,anthropic/claude-sonnet-4.5,Imogen Heap,Hide and Seek,False,,,
+user_000668,anthropic/claude-sonnet-4.5,The Fray,How to Save a Life,True,exact,80.0,piano
+user_000668,anthropic/claude-sonnet-4.5,Damien Rice,The Blower's Daughter,True,exact,0.0,singer-songwriter
+user_000668,anthropic/claude-sonnet-4.5,James Blunt,You're Beautiful,True,exact,76.0,rock
+user_000668,anthropic/claude-sonnet-4.5,Ludovico Einaudi,Nuvole Bianche,True,exact,73.0,ambient
+user_000668,anthropic/claude-sonnet-4.5,Elbow,One Day Like This,False,,,
+user_000668,gpt-4.1,Snow Patrol,Chasing Cars,True,exact,80.0,rock
+user_000668,gpt-4.1,Coldplay,The Scientist,True,exact,2.0,pop
+user_000668,gpt-4.1,Explosions In The Sky,Your Hand In Mine,False,,,
+user_000668,gpt-4.1,Florence + The Machine,Shake It Out,False,,,
+user_000668,gpt-4.1,Owl City,Fireflies,True,exact,79.0,indie-pop
+user_000668,gpt-4.1,Sigur Rós,Hoppípolla,False,,,
+user_000668,gpt-4.1,The Fray,How to Save a Life,True,exact,80.0,piano
+user_000668,gpt-4.1,Muse,Starlight,False,,,
+user_000668,gpt-4.1,Sufjan Stevens,Chicago,False,,,
+user_000668,gpt-4.1,Rufus Wainwright,Hallelujah,True,exact,1.0,piano
+user_000688,anthropic/claude-sonnet-4.5,Guns N' Roses,Welcome to the Jungle,True,exact,80.0,hard-rock
+user_000688,anthropic/claude-sonnet-4.5,Twisted Sister,I Wanna Rock,True,exact,73.0,hard-rock
+user_000688,anthropic/claude-sonnet-4.5,Ratt,Round and Round,False,,,
+user_000688,anthropic/claude-sonnet-4.5,Bauhaus,Bela Lugosi's Dead,True,exact,56.0,goth
+user_000688,anthropic/claude-sonnet-4.5,Joan Jett & The Blackhearts,Bad Reputation,True,exact,68.0,punk-rock
+user_000688,anthropic/claude-sonnet-4.5,Def Leppard,Pour Some Sugar on Me,True,exact,65.0,hard-rock
+user_000688,anthropic/claude-sonnet-4.5,The Stooges,Search and Destroy,False,,,
+user_000688,anthropic/claude-sonnet-4.5,Siouxsie And The Banshees,Spellbound,True,exact,0.0,alt-rock
+user_000688,anthropic/claude-sonnet-4.5,Cinderella,Nobody's Fool,True,exact,63.0,hard-rock
+user_000688,anthropic/claude-sonnet-4.5,The Cult,She Sells Sanctuary,True,exact,71.0,hard-rock
+user_000688,gpt-4.1,Twisted Sister,I Wanna Rock,True,exact,73.0,hard-rock
+user_000688,gpt-4.1,Joan Jett & The Blackhearts,Bad Reputation,True,exact,68.0,punk-rock
+user_000688,gpt-4.1,The Sisters of Mercy,Lucretia My Reflection,False,,,
+user_000688,gpt-4.1,The Stooges,Search and Destroy,False,,,
+user_000688,gpt-4.1,Billy Idol,Rebel Yell,True,exact,1.0,hard-rock
+user_000688,gpt-4.1,The Cult,She Sells Sanctuary,True,exact,71.0,hard-rock
+user_000688,gpt-4.1,L7,Pretend We're Dead,True,exact,60.0,grunge
+user_000688,gpt-4.1,New York Dolls,Personality Crisis,False,,,
+user_000688,gpt-4.1,The Damned,New Rose,False,,,
+user_000688,gpt-4.1,Roxy Music,Editions of You,False,,,
+user_000708,anthropic/claude-sonnet-4.5,Portishead,Glory Box,True,exact,0.0,electronic
+user_000708,anthropic/claude-sonnet-4.5,Radiohead,Karma Police,True,exact,76.0,alt-rock
+user_000708,anthropic/claude-sonnet-4.5,The Verve,Bitter Sweet Symphony,True,exact,80.0,alt-rock
+user_000708,anthropic/claude-sonnet-4.5,Morcheeba,The Sea,True,exact,62.0,trip-hop
+user_000708,anthropic/claude-sonnet-4.5,Air,La Femme d'Argent,True,exact,61.0,ambient
+user_000708,anthropic/claude-sonnet-4.5,Tricky,Hell Is Round the Corner,True,exact,55.0,trip-hop
+user_000708,anthropic/claude-sonnet-4.5,Sonic Youth,Bull in the Heather,False,,,
+user_000708,anthropic/claude-sonnet-4.5,The Smashing Pumpkins,1979,False,,,
+user_000708,anthropic/claude-sonnet-4.5,Blur,Song 2,True,artist+substr,0.0,alt-rock
+user_000708,anthropic/claude-sonnet-4.5,UNKLE,Rabbit in Your Headlights,False,,,
+user_000708,gpt-4.1,Portishead,Roads,True,exact,0.0,electronic
+user_000708,gpt-4.1,UNKLE,Rabbit In Your Headlights,False,,,
+user_000708,gpt-4.1,Air,La Femme d’Argent,True,exact,61.0,ambient
+user_000708,gpt-4.1,The Velvet Underground,Venus In Furs,False,,,
+user_000708,gpt-4.1,Primal Scream,Movin' On Up,False,,,
+user_000708,gpt-4.1,Interpol,Leif Erikson,False,,,
+user_000708,gpt-4.1,The Smashing Pumpkins,1979,False,,,
+user_000708,gpt-4.1,The War on Drugs,Red Eyes,False,,,
+user_000708,gpt-4.1,Tame Impala,Let It Happen,False,,,
+user_000708,gpt-4.1,The Raveonettes,Love In A Trashcan,False,,,
+user_000868,anthropic/claude-sonnet-4.5,Dead Kennedys,Holiday in Cambodia,True,artist+substr,42.0,hardcore
+user_000868,anthropic/claude-sonnet-4.5,X-Ray Spex,Oh Bondage Up Yours!,False,,,
+user_000868,anthropic/claude-sonnet-4.5,Buzzcocks,Ever Fallen in Love,False,,,
+user_000868,anthropic/claude-sonnet-4.5,The Clash,London Calling,True,artist+substr,72.0,punk-rock
+user_000868,anthropic/claude-sonnet-4.5,Black Flag,Rise Above,False,,,
+user_000868,anthropic/claude-sonnet-4.5,Bauhaus,Bela Lugosi's Dead,True,exact,56.0,goth
+user_000868,anthropic/claude-sonnet-4.5,The Stooges,I Wanna Be Your Dog,True,exact,0.0,blues
+user_000868,anthropic/claude-sonnet-4.5,Misfits,Last Caress,False,,,
+user_000868,anthropic/claude-sonnet-4.5,Wire,Mannequin,False,,,
+user_000868,anthropic/claude-sonnet-4.5,Peter Tosh,Legalize It,True,exact,57.0,dub
+user_000868,gpt-4.1,Buzzcocks,Ever Fallen in Love (With Someone You Shouldn't've),False,,,
+user_000868,gpt-4.1,The Gun Club,Sex Beat,False,,,
+user_000868,gpt-4.1,The Specials,A Message to You Rudy,False,,,
+user_000868,gpt-4.1,The Dead Kennedys,Holiday in Cambodia,False,,,
+user_000868,gpt-4.1,The Selecter,On My Radio,False,,,
+user_000868,gpt-4.1,The Slits,Typical Girls,False,,,
+user_000868,gpt-4.1,The Stooges,Search and Destroy,False,,,
+user_000868,gpt-4.1,Operation Ivy,Sound System,False,,,
+user_000868,gpt-4.1,The Sonics,Have Love Will Travel,True,exact,56.0,garage
+user_000868,gpt-4.1,The Exploding Hearts,Modern Kicks,False,,,
+user_000908,anthropic/claude-sonnet-4.5,Simian Mobile Disco,Hustler,False,,,
+user_000908,anthropic/claude-sonnet-4.5,MGMT,Electric Feel (Justice Remix),True,exact,77.0,alt-rock
+user_000908,anthropic/claude-sonnet-4.5,Klaxons,Golden Skans,True,exact,0.0,electronic
+user_000908,anthropic/claude-sonnet-4.5,CSS,Let's Make Love and Listen to Death From Above,False,,,
+user_000908,anthropic/claude-sonnet-4.5,Digitalism,Pogo,False,,,
+user_000908,anthropic/claude-sonnet-4.5,Chromeo,Fancy Footwork,False,,,
+user_000908,anthropic/claude-sonnet-4.5,Friendly Fires,Jump in the Pool,False,,,
+user_000908,anthropic/claude-sonnet-4.5,Hot Chip,Over and Over,False,,,
+user_000908,anthropic/claude-sonnet-4.5,Metronomy,The Look,True,exact,71.0,electronic
+user_000908,anthropic/claude-sonnet-4.5,Cut Copy,Lights & Music,False,,,
+user_000908,gpt-4.1,Digitalism,Pogo,False,,,
+user_000908,gpt-4.1,MGMT,Electric Feel,True,exact,77.0,alt-rock
+user_000908,gpt-4.1,Simian Mobile Disco,Hustler,False,,,
+user_000908,gpt-4.1,Hot Chip,Over and Over,False,,,
+user_000908,gpt-4.1,LCD Soundsystem,Someone Great,False,,,
+user_000908,gpt-4.1,Tame Impala,Elephant,False,,,
+user_000908,gpt-4.1,The Rapture,House of Jealous Lovers,False,,,
+user_000908,gpt-4.1,Soulwax,E Talking,False,,,
+user_000908,gpt-4.1,The Avalanches,Since I Left You,True,exact,57.0,psych-rock
+user_000908,gpt-4.1,Fleetwood Mac,The Chain,False,,,
+user_000928,anthropic/claude-sonnet-4.5,Paramore,Misery Business,True,exact,1.0,emo
+user_000928,anthropic/claude-sonnet-4.5,Phoenix,1901,False,,,
+user_000928,anthropic/claude-sonnet-4.5,The Strokes,Reptilia,True,exact,75.0,alt-rock
+user_000928,anthropic/claude-sonnet-4.5,Arctic Monkeys,Do I Wanna Know?,True,exact,88.0,garage
+user_000928,anthropic/claude-sonnet-4.5,Silversun Pickups,Lazy Eye,False,,,
+user_000928,anthropic/claude-sonnet-4.5,Two Door Cinema Club,What You Know,False,,,
+user_000928,anthropic/claude-sonnet-4.5,A Perfect Circle,The Outsider,False,,,
+user_000928,anthropic/claude-sonnet-4.5,Foster The People,Pumped Up Kicks,True,exact,84.0,indie
+user_000928,anthropic/claude-sonnet-4.5,Thrice,Black Honey,False,,,
+user_000928,anthropic/claude-sonnet-4.5,Passion Pit,Sleepyhead,False,,,
+user_000928,gpt-4.1,Silversun Pickups,Lazy Eye,False,,,
+user_000928,gpt-4.1,The Strokes,Reptilia,True,exact,75.0,alt-rock
+user_000928,gpt-4.1,Foals,My Number,False,,,
+user_000928,gpt-4.1,Interpol,Evil,False,,,
+user_000928,gpt-4.1,Bloc Party,Banquet,False,,,
+user_000928,gpt-4.1,Brand New,Sic Transit Gloria... Glory Fades,False,,,
+user_000928,gpt-4.1,Passion Pit,Sleepyhead,False,,,
+user_000928,gpt-4.1,AFI,Miss Murder,True,exact,72.0,emo
+user_000928,gpt-4.1,The Shins,New Slang,False,,,
+user_000928,gpt-4.1,Paramore,Misery Business,True,exact,1.0,emo
+user_000968,anthropic/claude-sonnet-4.5,Robyn,Dancing On My Own,True,exact,64.0,swedish
+user_000968,anthropic/claude-sonnet-4.5,Cut Copy,Lights & Music,False,,,
+user_000968,anthropic/claude-sonnet-4.5,MGMT,Electric Feel,True,exact,77.0,alt-rock
+user_000968,anthropic/claude-sonnet-4.5,Phoenix,1901,False,,,
+user_000968,anthropic/claude-sonnet-4.5,Metric,Help I'm Alive,False,,,
+user_000968,anthropic/claude-sonnet-4.5,Hot Chip,Over and Over,False,,,
+user_000968,anthropic/claude-sonnet-4.5,Chromeo,Fancy Footwork,False,,,
+user_000968,anthropic/claude-sonnet-4.5,Gossip,Heavy Cross,False,,,
+user_000968,anthropic/claude-sonnet-4.5,Crystal Castles,Not In Love,False,,,
+user_000968,anthropic/claude-sonnet-4.5,Little Boots,Remedy,False,,,
+user_000968,gpt-4.1,Cut Copy,Hearts on Fire,False,,,
+user_000968,gpt-4.1,Hot Chip,Over and Over,False,,,
+user_000968,gpt-4.1,Justice,D.A.N.C.E.,True,exact,66.0,electronic
+user_000968,gpt-4.1,Metric,Help I'm Alive,False,,,
+user_000968,gpt-4.1,MGMT,Electric Feel,True,exact,77.0,alt-rock
+user_000968,gpt-4.1,CSS,Music Is My Hot Hot Sex,False,,,
+user_000968,gpt-4.1,Passion Pit,Sleepyhead,False,,,
+user_000968,gpt-4.1,The Rapture,House of Jealous Lovers,False,,,
+user_000968,gpt-4.1,Goldfrapp,Ooh La La,True,exact,18.0,synth-pop
+user_000968,gpt-4.1,Friendly Fires,Paris,False,,,
+user_000989,anthropic/claude-sonnet-4.5,Tom Petty,Free Fallin',True,exact,0.0,folk
+user_000989,anthropic/claude-sonnet-4.5,The Killers,Mr. Brightside,True,exact,2.0,alt-rock
+user_000989,anthropic/claude-sonnet-4.5,Fleetwood Mac,Dreams,False,,,
+user_000989,anthropic/claude-sonnet-4.5,U2,With Or Without You,False,,,
+user_000989,anthropic/claude-sonnet-4.5,John Mellencamp,Jack & Diane,False,,,
+user_000989,anthropic/claude-sonnet-4.5,REO Speedwagon,Can't Fight This Feeling,True,exact,73.0,hard-rock
+user_000989,anthropic/claude-sonnet-4.5,Journey,Don't Stop Believin',True,exact,83.0,hard-rock
+user_000989,anthropic/claude-sonnet-4.5,The Verve,Bitter Sweet Symphony,True,exact,80.0,alt-rock
+user_000989,anthropic/claude-sonnet-4.5,Oasis,Wonderwall,True,artist+substr,78.0,rock
+user_000989,anthropic/claude-sonnet-4.5,Chris Isaak,Wicked Game,False,,,
+user_000989,gpt-4.1,David Bowie,Heroes,False,,,
+user_000989,gpt-4.1,Queen,Somebody To Love,False,,,
+user_000989,gpt-4.1,R.E.M.,Losing My Religion,True,exact,0.0,alt-rock
+user_000989,gpt-4.1,The Rolling Stones,Angie,True,exact,72.0,british
+user_000989,gpt-4.1,U2,With Or Without You,False,,,
+user_000989,gpt-4.1,The Verve,Bitter Sweet Symphony,True,exact,80.0,alt-rock
+user_000989,gpt-4.1,Fleetwood Mac,Go Your Own Way,True,artist+substr,0.0,rock
+user_000989,gpt-4.1,Phil Collins,In The Air Tonight,False,,,
+user_000989,gpt-4.1,The Beatles,While My Guitar Gently Weeps,True,exact,53.0,british
+user_000989,gpt-4.1,INXS,Never Tear Us Apart,False,,,

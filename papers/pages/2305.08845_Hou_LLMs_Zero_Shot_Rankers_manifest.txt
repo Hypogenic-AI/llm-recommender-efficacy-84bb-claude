@@ -1,0 +1,10 @@
+PDF: papers/2305.08845_Hou_LLMs_Zero_Shot_Rankers.pdf
+Total pages: 19
+Pages per chunk: 4
+
+Chunks:
+  2305.08845_Hou_LLMs_Zero_Shot_Rankers_chunk_001.pdf: pages 1-4
+  2305.08845_Hou_LLMs_Zero_Shot_Rankers_chunk_002.pdf: pages 5-8
+  2305.08845_Hou_LLMs_Zero_Shot_Rankers_chunk_003.pdf: pages 9-12
+  2305.08845_Hou_LLMs_Zero_Shot_Rankers_chunk_004.pdf: pages 13-16
+  2305.08845_Hou_LLMs_Zero_Shot_Rankers_chunk_005.pdf: pages 17-19

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/llm-recommender-efficacy-84bb-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/llm-recommender-efficacy-84bb-claude/literature_review.md",
+        "resources_catalog": "/workspaces/llm-recommender-efficacy-84bb-claude/resources.md",
+        "papers_dir": "/workspaces/llm-recommender-efficacy-84bb-claude/papers",
+        "datasets_dir": "/workspaces/llm-recommender-efficacy-84bb-claude/datasets",
+        "code_dir": "/workspaces/llm-recommender-efficacy-84bb-claude/code"
+      },
+      "log_file": "/workspaces/llm-recommender-efficacy-84bb-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/llm-recommender-efficacy-84bb-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 1356.5516867637634
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 1703.8152749538422,
+      "log_file": "/workspaces/llm-recommender-efficacy-84bb-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/llm-recommender-efficacy-84bb-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/llm-recommender-efficacy-84bb-claude"
+}
